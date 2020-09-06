@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html ng-app='MsgApp'>
+<head>
+<meta charset="utf-8">
+    <script src= "Scripts\angular.min.js"></script>
+    <script src= "Scripts\app.js"></script>
+	<style> body { font-size: 1.2em; }</style>
+    <title>AngularJS Application</title>
+</head>
+
+  <body>
+    <h1>Application Testing</h1>
+	<div>
+		Enter Numbers to Multiply: 
+		<input type="text" ng-model="Num1" /> x <input type="text" ng-model="Num2" /> 
+		= <span>{{Num1 * Num2}}</span>  
+	 </div>
+	 
+	<div ng-controller='MsgController'>
+	  {{name}} has a message for you: <br>
+	  {{sayMsg()}}
+	  <div>
+	    <button ng-click="feedsingh()">feed Singh</button>
+	    <br>
+		
+		 <img ng-src="images/nature_{{stateOfBeing}}.png">  
+      </div> 
+	 </div> 
+   </body>
+</html>
